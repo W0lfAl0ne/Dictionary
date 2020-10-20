@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="613.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.ControllerEditWord">
+   <children>
+      <TextField fx:id="wordEnter" layoutX="21.0" layoutY="42.0" onAction="#lookup" prefHeight="31.0" prefWidth="344.0" promptText="Nhập từ muốn sửa" />
+      <TableView fx:id="table" layoutX="21.0" layoutY="87.0" prefHeight="487.0" prefWidth="344.0">
+        <columns>
+          <TableColumn fx:id="target" prefWidth="172.0" text="English" />
+          <TableColumn fx:id="explain" minWidth="0.0" prefWidth="171.0" text="Vietnammes" />
+        </columns>
+      </TableView>
+      <TextField fx:id="textTarget" layoutX="534.0" layoutY="105.0" onAction="#lookup" prefHeight="31.0" prefWidth="207.0" />
+      <TextField fx:id="textExplain" layoutX="534.0" layoutY="187.0" onAction="#lookup" prefHeight="31.0" prefWidth="207.0" />
+      <Label layoutX="393.0" layoutY="105.0" prefHeight="31.0" prefWidth="117.0" text="English" />
+      <Label layoutX="393.0" layoutY="187.0" prefHeight="31.0" prefWidth="117.0" text="Vietnammes" />
+      <Button layoutX="393.0" layoutY="325.0" mnemonicParsing="false" onAction="#add" prefHeight="31.0" prefWidth="74.0" text="Add" />
+      <Button layoutX="536.0" layoutY="325.0" mnemonicParsing="false" onAction="#delete" prefHeight="31.0" prefWidth="74.0" text="Delete" />
+      <Button layoutX="667.0" layoutY="325.0" mnemonicParsing="false" onAction="#reset" prefHeight="31.0" prefWidth="74.0" text="Reset" />
+      <Button layoutX="524.0" layoutY="454.0" mnemonicParsing="false" onAction="#back" prefHeight="37.0" prefWidth="99.0" text="Back" />
+      <Button layoutX="393.0" layoutY="42.0" mnemonicParsing="false" onAction="#lookup" text="Search" />
+      <Label fx:id="text" layoutX="534.0" layoutY="227.0" onDragDetected="#add" prefHeight="21.0" prefWidth="207.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
